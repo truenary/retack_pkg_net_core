@@ -1,0 +1,81 @@
+﻿# Compiled files
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+# Visual Studio files
+*.vscode/
+.vs/
+*.sln.docstates
+
+# NuGet Packages
+*.nuget/
+*.nupkg
+packages/
+*.lock.json
+project.lock.json
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Temporary files
+[Tt]emp/
+[Oo]bjects/
+[Ii]ntermediate/
+[Ii]nterop/
+
+# Resharper
+_ReSharper*/
+*.resharper
+*.ReSharper*
+
+# Rider
+.idea/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Visual Studio Code files
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+_MT*
+!Install/
+
+

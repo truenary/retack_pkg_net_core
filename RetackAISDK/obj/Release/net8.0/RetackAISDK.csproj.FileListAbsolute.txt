@@ -9,3 +9,15 @@
 /home/ramesh/Truenary/InsightAI/SDK/sdk_library/RetackAISDK/obj/Release/net8.0/refint/RetackAISDK.dll
 /home/ramesh/Truenary/InsightAI/SDK/sdk_library/RetackAISDK/obj/Release/net8.0/RetackAISDK.pdb
 /home/ramesh/Truenary/InsightAI/SDK/sdk_library/RetackAISDK/obj/Release/net8.0/ref/RetackAISDK.dll
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.deps.json
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.dll
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.pdb
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.GeneratedMSBuildEditorConfig.editorconfig
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.AssemblyInfoInputs.cache
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.AssemblyInfo.cs
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.csproj.CoreCompileInputs.cache
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.sourcelink.json
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.dll
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\refint\RetackAISDK.dll
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.pdb
+C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\ref\RetackAISDK.dll

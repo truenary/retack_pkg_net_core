@@ -3,16 +3,45 @@
   <metadata>
     <id>RetackAI.NuGetDemo.AspNetSdk</id>
     <version>1.0.0</version>
+    <title>Retack-AI</title>
     <authors>RetackAISDK</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>RetackLogo 1.png</icon>
+    <readme>README.md</readme>
     <description>Package Description</description>
-    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <repository type="git" commit="9ffffbd4c9fdabf2b6e65a4165d9ce3540265ede" />
     <dependencies>
       <group targetFramework="net8.0" />
     </dependencies>
+    <contentFiles>
+      <files include="any/net8.0/bin/Debug/net8.0/RetackAISDK.deps.json" buildAction="Content" />
+      <files include="any/net8.0/bin/Release/net8.0/RetackAISDK.deps.json" buildAction="Content" />
+      <files include="any/net8.0/obj/Debug/net8.0/RetackAISDK.csproj.FileListAbsolute.txt" buildAction="Content" />
+      <files include="any/net8.0/obj/project.assets.json" buildAction="Content" />
+      <files include="any/net8.0/obj/Release/net8.0/RetackAISDK.csproj.FileListAbsolute.txt" buildAction="Content" />
+      <files include="any/net8.0/obj/Release/net8.0/RetackAISDK.sourcelink.json" buildAction="Content" />
+      <files include="any/net8.0/obj/RetackAISDK.csproj.nuget.dgspec.json" buildAction="Content" />
+    </contentFiles>
   </metadata>
   <files>
-    <file src="/net8.0/RetackAISDK.dll" target="lib/net8.0/RetackAISDK.dll" />
-    <file src="../../LICENSE" target="LICENSE"/>
-    <file src="../../README.md" target="README.md"/>
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.dll" target="lib\net8.0\RetackAISDK.dll" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Debug\net8.0\RetackAISDK.deps.json" target="content\bin\Debug\net8.0\RetackAISDK.deps.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Debug\net8.0\RetackAISDK.deps.json" target="contentFiles\any\net8.0\bin\Debug\net8.0\RetackAISDK.deps.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.deps.json" target="content\bin\Release\net8.0\RetackAISDK.deps.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\bin\Release\net8.0\RetackAISDK.deps.json" target="contentFiles\any\net8.0\bin\Release\net8.0\RetackAISDK.deps.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Debug\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" target="content\obj\Debug\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Debug\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" target="contentFiles\any\net8.0\obj\Debug\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\project.assets.json" target="content\obj\project.assets.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\project.assets.json" target="contentFiles\any\net8.0\obj\project.assets.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" target="content\obj\Release\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" target="contentFiles\any\net8.0\obj\Release\net8.0\RetackAISDK.csproj.FileListAbsolute.txt" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.sourcelink.json" target="content\obj\Release\net8.0\RetackAISDK.sourcelink.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\Release\net8.0\RetackAISDK.sourcelink.json" target="contentFiles\any\net8.0\obj\Release\net8.0\RetackAISDK.sourcelink.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\RetackAISDK.csproj.nuget.dgspec.json" target="content\obj\RetackAISDK.csproj.nuget.dgspec.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\obj\RetackAISDK.csproj.nuget.dgspec.json" target="contentFiles\any\net8.0\obj\RetackAISDK.csproj.nuget.dgspec.json" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\LICENSE" target="\LICENSE" />
+    <file src="C:\D Drive\Truenary projects\asp_net_sdk\RetackAISDK\README.md" target="\README.md" />
+    <file src="C:\Users\rames\Downloads\RetackLogo 1.png" target="\RetackLogo 1.png" />
   </files>
 </package>

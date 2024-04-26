@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>RetackAI.NuGet.AspNetSdk</PackageId>
+    <Title>Retack-AI</Title>
+    <Version>1.0.2</Version>
+    <Authors>Truenary</Authors>
+    <Company>Truenary Solution Pvt. Ltd.</Company>
+    <Product>AspNetSdk</Product>
+    <Copyright>@Truenary </Copyright>
+    <PackageIcon>RetackLogo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Release\netcoreapp2.1\.NETCoreApp,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.AssemblyInfo.cs" />
+    <Compile Include="RetackSDK.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.deps.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\RetackAI_SDK_V_4.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\icon\RetackLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\RetackAISDK\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\RetackAISDK\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.dll" />
+    <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.pdb" />
+    <None Include="bin\Release\RetackAI.NuGet.AspNetSdk.1.0.2.nupkg" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.assets.cache" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.csproj.AssemblyReference.cache" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.dll" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.pdb" />
+    <None Include="obj\Release\RetackAI.NuGet.AspNetSdk.1.0.2.nuspec" />
+    <None Include="obj\RetackAI_SDK_V_4.csproj.nuget.g.props" />
+    <None Include="obj\RetackAI_SDK_V_4.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="4.5.1" />
+  </ItemGroup>
+
+</Project>

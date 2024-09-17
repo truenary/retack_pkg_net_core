@@ -18,14 +18,13 @@ namespace RetackAI_SDK_V_4
 
         public async Task<bool> ReportErrorAsync(string error, object stackTrace, UserContext userContext = null)
         {
-            //var baseUrl = "https://api.retack.ai";
-            var baseUrl = "https://api.dev.retack.ai";
+            var baseUrl = "https://api.retack.ai";
             var endpoint = "/observe/error-log/";
 
             var headers = new Dictionary<string, string>
             {
                 { "Content-Type", "application/json" },
-                { "ENV-KEY", _retackConfig.ApiKey }
+                { "ENV-KEY", _retackConfig.EnvKey }
             };
 
             var body = new Dictionary<string, dynamic>
@@ -40,7 +39,7 @@ namespace RetackAI_SDK_V_4
                 using (var request = new HttpRequestMessage(HttpMethod.Post, baseUrl + endpoint))
                 {
                     request.Headers.TryAddWithoutValidation("Content-Type", "application/json");
-                    request.Headers.TryAddWithoutValidation("ENV-KEY", _retackConfig.ApiKey);
+                    request.Headers.TryAddWithoutValidation("ENV-KEY", _retackConfig.EnvKey);
 
                     var json = JsonConvert.SerializeObject(body);
                     request.Content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -68,11 +67,11 @@ namespace RetackAI_SDK_V_4
 
     public class RetackConfig
     {
-        public string ApiKey { get; set; }
+        public string EnvKey { get; set; }
 
-        public RetackConfig(string apiKey)
+        public RetackConfig(string EnvKey)
         {
-            ApiKey = apiKey;
+            EnvKey = EnvKey;
         }
     }
 

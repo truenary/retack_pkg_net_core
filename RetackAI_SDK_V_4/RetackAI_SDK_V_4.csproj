@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>RetackAI.NuGet.AspNetSdk</PackageId>
     <Title>Retack-AI</Title>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Truenary</Authors>
     <Company>Truenary Solution Pvt. Ltd.</Company>
     <Product>AspNetSdk</Product>

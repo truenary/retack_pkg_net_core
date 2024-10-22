@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>RetackAI.NuGet.AspNetSdk</PackageId>
+    <PackageId>RetackAI.AspNetSdk.NuGet</PackageId>
     <Title>Retack-AI</Title>
-    <Version>1.0.2</Version>
+    <Version>1.0.0</Version>
     <Authors>Truenary</Authors>
     <Company>Truenary Solution Pvt. Ltd.</Company>
     <Product>AspNetSdk</Product>
@@ -26,6 +26,7 @@
     <Content Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.deps.json" />
     <Content Include="obj\project.assets.json" />
     <Content Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.sourcelink.json" />
     <Content Include="obj\RetackAI_SDK_V_4.csproj.nuget.dgspec.json" />
   </ItemGroup>
 
@@ -44,7 +45,7 @@
     </None>
     <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.dll" />
     <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.pdb" />
-    <None Include="bin\Release\RetackAI.NuGet.AspNetSdk.1.0.2.nupkg" />
+    <None Include="bin\Release\RetackAI.AspNetSdk.NuGet.1.0.0.nupkg" />
     <None Include="obj\project.nuget.cache" />
     <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.AssemblyInfoInputs.cache" />
     <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.assets.cache" />
@@ -53,13 +54,17 @@
     <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.dll" />
     <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.GeneratedMSBuildEditorConfig.editorconfig" />
     <None Include="obj\Release\netcoreapp2.1\RetackAI_SDK_V_4.pdb" />
-    <None Include="obj\Release\RetackAI.NuGet.AspNetSdk.1.0.2.nuspec" />
+    <None Include="obj\Release\RetackAI.AspNetSdk.NuGet.1.0.0.nuspec" />
     <None Include="obj\RetackAI_SDK_V_4.csproj.nuget.g.props" />
     <None Include="obj\RetackAI_SDK_V_4.csproj.nuget.g.targets" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Nuget-Package-file\" />
   </ItemGroup>
 
 </Project>

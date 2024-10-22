@@ -18,8 +18,7 @@ namespace RetackAI_SDK_V_4
 
         public async Task<bool> ReportErrorAsync(string error, object stackTrace, UserContext userContext = null)
         {
-            //var baseUrl = "https://api.retack.ai";
-            var baseUrl = "https://api.dev.retack.ai";
+            var baseUrl = "https://api.retack.ai";
             var endpoint = "/observe/error-log/";
 
             var headers = new Dictionary<string, string>

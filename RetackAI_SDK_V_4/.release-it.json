@@ -1,0 +1,39 @@
+{
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "github": {
+    "release": true,
+    "releaseName": "Release ${version}",
+    "preRelease": false,
+    "autoGenerate": true,
+    "tokenRef": "TOKEN_GITHUB",
+    "contributors": true
+  },
+  "hooks": {
+    "before:bump": [
+      "chmod +x ./script/update_version.sh",
+      "./script/update_version.sh RetackAI_SDK_V_4.csproj ${version}"
+    ],
+    "before:release": [
+      "dotnet build --configuration Release",
+      "dotnet pack --configuration Release -o ./nupkgs"
+    ],
+    "after:release": [
+      "dotnet nuget push ./nupkgs/RetackAI.AspNetSdk.NuGet.${version}.nupkg --api-key \"$NUGET_API_KEY\" -s https://api.nuget.org/v3/index.json"
+    ]
+  },
+  "git": {
+    "commitMessage": "chore(release): ${version}",
+    "tagName": "V${version}",
+    "requireCleanWorkingDir": true,
+    "push": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}

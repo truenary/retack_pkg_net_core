@@ -1,0 +1,74 @@
+name: Release & Publish to NuGet
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: 'Specify release type: regular, alpha, beta, or rc'
+        required: true
+        default: 'regular'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_TYPE: ${{ github.event.inputs.release-type }}
+  
+    steps:
+      # Validate the branch
+      - name: Validate branch
+        run: |
+          if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
+            echo "Error: This workflow can only be run on the main branch."
+            exit 1
+          fi
+          
+      # Validate the release type
+      - name: Validate release type
+        run: |
+          if [[ "$RELEASE_TYPE" != "regular" && "$RELEASE_TYPE" != "alpha" && "$RELEASE_TYPE" != "beta" && "$RELEASE_TYPE" != "rc" ]]; then
+            echo "Error: Invalid release type '$RELEASE_TYPE'. It must be one of: regular, alpha, beta, or rc."
+            exit 1
+          fi
+
+      # Checkout source code
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      # Setup .NET Core
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v2
+
+      # Install Node.js dependencies
+      - name: Install Node.js dependencies
+        working-directory: RetackAI_SDK_V_4
+        run: npm ci
+
+      # Set Git user
+      - name: Set Git user
+        run: |
+          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+
+      # Run release-it
+      - name: Run release-it
+        working-directory: RetackAI_SDK_V_4
+        run: |
+          if [ "$RELEASE_TYPE" == "regular" ]; then
+            npx release-it
+          else
+            npx release-it --preRelease="$RELEASE_TYPE"
+          fi
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
+      
+      # Print success message if release-it completes successfully
+      - name: Print success message
+        if: success()
+        run: echo "Release and publishing completed successfully!"
+
+      # Handle failure
+      - name: Handle failure
+        if: failure()
+        run: echo "Release process failed. Check the logs for details."

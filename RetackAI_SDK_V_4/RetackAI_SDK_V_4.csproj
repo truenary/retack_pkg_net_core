@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>RetackAI</PackageId>
     <PackageId>RetackAI.AspNetSdk.NuGet</PackageId>
     <Title>Retack-AI</Title>
     <Version>1.0.0</Version>
@@ -15,6 +16,11 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Nuget-Package-file\**" />
+    <None Remove="Nuget-Package-file\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="obj\Release\netcoreapp2.1\.NETCoreApp,Version=v2.1.AssemblyAttributes.cs" />
@@ -31,18 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\icon\RetackLogo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\RetackAISDK\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\asp_net_sdk\RetackAISDK\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.dll" />
     <None Include="bin\Release\netcoreapp2.1\RetackAI_SDK_V_4.pdb" />
     <None Include="bin\Release\RetackAI.AspNetSdk.NuGet.1.0.0.nupkg" />
@@ -64,6 +58,30 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="RetackLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="icon\RetackLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <Folder Include="Nuget-Package-file\" />
   </ItemGroup>
 
